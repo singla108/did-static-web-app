@@ -1,0 +1,48 @@
+{
+  "id": "did:web:agreeable-water-0cf590210.3.azurestaticapps.net",
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    {
+      "@base": "did:web:agreeable-water-0cf590210.3.azurestaticapps.net"
+    }
+  ],
+  "service": [
+    {
+      "id": "#linkeddomains",
+      "type": "LinkedDomains",
+      "serviceEndpoint": {
+        "origins": [
+          "https://agreeable-water-0cf590210.3.azurestaticapps.net/"
+        ]
+      }
+    },
+    {
+      "id": "#hub",
+      "type": "IdentityHub",
+      "serviceEndpoint": {
+        "instances": [
+          "https://hub.did.msidentity.com/v1.0/f71d7bda-f95d-4f72-882c-d0086f9d5456"
+        ]
+      }
+    }
+  ],
+  "verificationMethod": [
+    {
+      "id": "#d519a3766dca4a6bb4a0ba618f27b826vcSigningKey-e6006",
+      "controller": "did:web:agreeable-water-0cf590210.3.azurestaticapps.net",
+      "type": "EcdsaSecp256k1VerificationKey2019",
+      "publicKeyJwk": {
+        "crv": "secp256k1",
+        "kty": "EC",
+        "x": "qLQCesiaQd1nBS2o6k_RswPU-ycO2szjfZFFnCdm7dU",
+        "y": "DflyvonoeARX3r6dnzxvhAb-fXFc-TyXC_E-bg4G4S4"
+      }
+    }
+  ],
+  "authentication": [
+    "#d519a3766dca4a6bb4a0ba618f27b826vcSigningKey-e6006"
+  ],
+  "assertionMethod": [
+    "#d519a3766dca4a6bb4a0ba618f27b826vcSigningKey-e6006"
+  ]
+}
